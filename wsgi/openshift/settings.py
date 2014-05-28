@@ -14,7 +14,8 @@ if ON_OPENSHIFT:
         print("WARNING: The DEBUG environment is set to True.")
 else:
     DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+#TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = True
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
