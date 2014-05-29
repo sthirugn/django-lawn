@@ -66,9 +66,10 @@
   
   <!-- maincontent Starts -->
   <div class="container">
-    <div class="container-in"> <img src="images/container-bg.jpg" width="940" height="327" alt="img" />
+  {% load static from staticfiles %}
+    <div class="container-in"> <img src="{% static "images/container-bg.jpg" %}" width="940" height="327" alt="img" />
       <div class="read1">
-        <div class="read1-img1"> <img src="images/read1-img.png" width="32" height="30" alt="img" /> </div>
+        <div class="read1-img1"> <img src="{% static "images/read1-img.png" %}" width="32" height="30" alt="img" /> </div>
         <h3>Lorem ipsum dolor</h3>
         <p>Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Duis porta, nisl sed cursus volutpat, est nulla placerat.</p>
         <a href="#">READ MORE</a> </div>
