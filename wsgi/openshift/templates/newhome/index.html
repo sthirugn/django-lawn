@@ -9,8 +9,10 @@
 <!-- END: FAVICON -->
 
 <!-- SET: STYLESHEET -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+{% load static from staticfiles %}
+<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" media="all" />
 <!-- END: STYLESHEET -->
+
 
 <!-- SET: SCRIPTS -->
 <script type="text/javascript"></script>
@@ -64,19 +66,20 @@
   
   <!-- maincontent Starts -->
   <div class="container">
-    <div class="container-in"> <img src="images/container-bg.jpg" width="940" height="327" alt="img" />
+  {% load static from staticfiles %}
+    <div class="container-in"> <img src="{% static "images/container-bg.jpg" %}" width="940" height="327" alt="img" />
       <div class="read1">
-        <div class="read1-img1"> <img src="images/read1-img.png" width="32" height="30" alt="img" /> </div>
+        <div class="read1-img1"> <img src="{% static "images/read1-img.png" %}" width="32" height="30" alt="img" /> </div>
         <h3>Lorem ipsum dolor</h3>
         <p>Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Duis porta, nisl sed cursus volutpat, est nulla placerat.</p>
         <a href="#">READ MORE</a> </div>
       <div class="read1">
-        <div class="read1-img1"> <img src="images/read2-img.png" width="32" height="32" alt="img" /> </div>
+        <div class="read1-img1"> <img src="{% static "images/read2-img.png" %}"  width="32" height="32" alt="img" /> </div>
         <h3>Maecenas tempus</h3>
         <p>Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Duis porta, nisl sed cursus volutpat, est nulla placerat.</p>
         <a href="#">READ MORE</a> </div>
       <div class="read1 last">
-        <div class="read1-img1"> <img src="images/read3-img.png" width="32" height="32" alt="img" /> </div>
+        <div class="read1-img1"> <img src="{% static "images/read3-img.png" %}" width="32" height="32" alt="img" /> </div>
         <h3>Vivamus elementum</h3>
         <p>Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. Duis porta, nisl sed cursus volutpat, est nulla placerat.</p>
         <a href="#">READ MORE</a> </div>
@@ -119,9 +122,9 @@
     <div class="footer-in">
       <div class="social-icons">
         <ul>
-          <li><a href="#"><img src="images/face-book.png" width="16" height="16" alt="img" /></a></li>
-          <li><a href="#"><img src="images/twitter.png" width="16" height="16" alt="img" /></a></li>
-          <li class="last"><a href="#"><img src="images/google.png" width="16" height="16" alt="img" /></a></li>
+          <li><a href="#"><img src="{% static "images/face-book.png" %}" width="16" height="16" alt="img" /></a></li>
+          <li><a href="#"><img src="{% static "images/twitter.png" %}" width="16" height="16" alt="img" /></a></li>
+          <li class="last"><a href="#"><img src="{% static "images/google.png" %}" width="16" height="16" alt="img" /></a></li>
         </ul>
         <div class="clear"></div>
       </div>
