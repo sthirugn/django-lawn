@@ -6,3 +6,6 @@ def home(request):
 
 def lawn(request):
     return render_to_response('newhome/index.html')
+
+def services(request):
+    return render_to_response('newhome/services.html')

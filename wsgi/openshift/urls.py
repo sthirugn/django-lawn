@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^$', 'openshift.views.lawn', name='lawn'),
     url(r'^home/', 'openshift.views.lawn', name='lawn'),
     url(r'^lawn/', 'openshift.views.lawn', name='lawn'),
+    url(r'^services/', 'openshift.views.services', name='lawn'),
     # url(r'^openshift/', include('openshift.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
