@@ -47,7 +47,6 @@ Note: Every time you push, everything in your remote repo dir gets recreated
 please store long term items (like an sqlite database) in ../data which will
 persist between pushes of your repo.
 
-
 Notes about setup.py
 ====================
 
